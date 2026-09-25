@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* ── Palette NovaQuiz ── */
+  --primary:          #415A77;
+  --primary-dark:     #2E4057;
+  --primary-light:    #5B7A9A;
+
+  --secondary:        #1B263B;
+  --secondary-dark:   #0F1826;
+  --secondary-light:  #263554;
+
+  --tertiary:         #C5A059;
+  --tertiary-dark:    #A07A35;
+  --tertiary-light:   #D4B47A;
+
+  --neutral:          #F8F9FA;
+  --neutral-dark:     #E2E5EA;
+  --neutral-mid:      #C4CAD4;
+
+  /* ── Mapping UI ── */
+  --bg-primary:       #F8F9FA;
+  --bg-secondary:     #1B263B;
+  --bg-card:          #FFFFFF;
+  --bg-card-hover:    #F0F2F5;
+
+  --border:           #415A77;
+  --border-light:     rgba(65, 90, 119, 0.25);
+
+  /* accents  */
+  --accent-violet:         #415A77;
+  --accent-violet-light:   #5B7A9A;
+  --accent-cyan:           #C5A059;
+  --accent-cyan-light:     #D4B47A;
+
+  --text-primary:     #1B263B;
+  --text-secondary:   #415A77;
+  --text-muted:       #6B7C93;
+  --text-on-dark:     #F8F9FA;
+
+  --success:          #2D7A4F;
+  --warning:          #C5A059;
+  --danger:           #C0392B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Newsreader', serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--neutral-dark); }
+::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--tertiary); }
+
+/* Glass card — dark panel */
+.glass-card {
+  background: rgba(27, 38, 59, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(65, 90, 119, 0.4);
+}
+
+/* Glow effects */
+.glow-violet {
+  box-shadow: 0 0 24px rgba(65, 90, 119, 0.2);
+}
+.glow-cyan {
+  box-shadow: 0 0 24px rgba(197, 160, 89, 0.2);
+}
