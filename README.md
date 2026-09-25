@@ -263,6 +263,16 @@ Cela va démarrer les services suivants :
 - Backend API sur le port `3001`
 - Frontend Vite sur le port `5173`
 
+Ensuite arreter les containers avec la commande 
+```bash
+docker compose down
+```
+
+Et redémarrer les services avec 
+```bash
+docker compose up -d
+```
+
 Ensuite ouvrez l'application dans le navigateur :
 
 ```text
